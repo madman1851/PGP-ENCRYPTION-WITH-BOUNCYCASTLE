@@ -1,4 +1,4 @@
-package encryption;
+package com.encr.encryption;
 
 import org.apache.hadoop.io.IOUtils;
 import org.springframework.beans.factory.annotation.Value;

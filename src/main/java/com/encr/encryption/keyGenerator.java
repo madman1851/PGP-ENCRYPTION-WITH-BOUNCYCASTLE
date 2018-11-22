@@ -1,16 +1,7 @@
-package encryption;
-
-import org.bouncycastle.crypto.generators.RSAKeyPairGenerator;
-import org.bouncycastle.crypto.params.RSAKeyGenerationParameters;
-import org.bouncycastle.openpgp.*;
-
-import java.io.BufferedOutputStream;
-import java.io.FileOutputStream;
-import java.math.BigInteger;
-import java.security.SecureRandom;
-import java.util.Date;
+package com.encr.encryption;
 
 public class keyGenerator {
+    /*
     public static void main(String args[])
             throws Exception
     {
@@ -70,7 +61,7 @@ public class keyGenerator {
         PGPKeyPair rsakp_sign =
                 new BcPGPKeyPair
                         (PGPPublicKey.RSA_SIGN, kpg.generateKeyPair(), new Date());
-        // Then an encryption subkey.
+        // Then an com.encr.encryption subkey.
         PGPKeyPair rsakp_enc =
                 new BcPGPKeyPair
                         (PGPPublicKey.RSA_ENCRYPT, kpg.generateKeyPair(), new Date());
@@ -104,7 +95,7 @@ public class keyGenerator {
         signhashgen.setFeature
                 (false, Features.FEATURE_MODIFICATION_DETECTION);
 
-        // Create a signature on the encryption subkey.
+        // Create a signature on the com.encr.encryption subkey.
         PGPSignatureSubpacketGenerator enchashgen =
                 new PGPSignatureSubpacketGenerator();
         // Add metadata to declare its purpose
@@ -138,9 +129,10 @@ public class keyGenerator {
                                                 HashAlgorithmTags.SHA1),
                                 pske);
 
-        // Add our encryption subkey, together with its signature.
+        // Add our com.encr.encryption subkey, together with its signature.
         keyRingGen.addSubKey
                 (rsakp_enc, enchashgen.generate(), null);
         return keyRingGen;
-    }
+
+    }*/
 }

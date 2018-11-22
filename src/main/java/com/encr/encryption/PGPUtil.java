@@ -1,4 +1,4 @@
-package encryption;
+package com.encr.encryption;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -44,7 +44,7 @@ public class PGPUtil {
         PGPPublicKeyRingCollection pgpPub = new PGPPublicKeyRingCollection(in);
 
         //
-        // we just loop through the collection till we find a key suitable for encryption, in the real
+        // we just loop through the collection till we find a key suitable for com.encr.encryption, in the real
         // world you would probably want to be a bit smarter about this.
         //
         PGPPublicKey key = null;
@@ -67,7 +67,7 @@ public class PGPUtil {
         }
 
         if (key == null) {
-            throw new IllegalArgumentException("Can't find encryption key in key ring.");
+            throw new IllegalArgumentException("Can't find com.encr.encryption key in key ring.");
         }
 
         return key;

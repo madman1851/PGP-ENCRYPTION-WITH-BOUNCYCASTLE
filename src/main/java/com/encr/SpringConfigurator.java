@@ -1,3 +1,5 @@
+package com.encr;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -7,7 +9,7 @@ import org.springframework.core.io.ClassPathResource;
 
 
 @Configuration
-@ComponentScan(basePackages = "java")
+@ComponentScan(basePackages = "com.encr")
 @PropertySource("classpath:configuration.properties")
 public class SpringConfigurator {
 
